@@ -6,7 +6,7 @@
         </div>
         <div class="row f_data" v-for="(legalentity, index) in LegalEnitiyArray" :key="index">
             <div class="col-4 ">
-                <router-link :to="{name: 'legalentity', query: {id: legalentity.id}}">
+                <router-link :to="{name: 'legalentity', params: {id: legalentity.id}}">
                     {{legalentity.name}}
                 </router-link>
             </div>
